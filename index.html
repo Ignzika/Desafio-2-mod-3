@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Desafio 2</title>
+
+</head>
+
+<body>
+    <main>
+        <section id="parte1">
+            <img src="assets/image/bulboff.png" alt="ampolleta" id="bulb">
+        </section>
+
+        <section id="parte2">
+            <article id="stickersection">
+
+                <div class="stickers">
+                    <img src="assets/image/stik1.png" alt="FBI-x-files">
+                    <span class="txt">Cantidad</span>
+                    <input name="amount" type="number" min="0" max="10" id="amount1" step="1"
+                        class="styleInput"></input>
+                </div>
+
+                <div class="stickers">
+                    <img src="assets/image/stik2.png" alt="toxicbird">
+                    <span class="txt">Cantidad</span>
+                    <input name="amount" type="number" min="0" max="10" id="amount2" step="1"
+                        class="styleInput"></input>
+                </div>
+
+                <div class="stickers">
+                    <img src="assets/image/stik4.png" alt="badmilk">
+                    <span class="txt">Cantidad</span>
+                    <input name="amount" type="number" min="0" max="10" id="amount3" step="1"
+                        class="styleInput"></input>
+                </div>
+
+                <div class="stickers">
+                    <img src="assets/image/stik5.png" alt="3eyecat">
+                    <span class="txt">Cantidad</span>
+                    <input name="amount" type="number" min="0" max="10" id="amount4" step="1"
+                        class="styleInput"></input>
+                </div>
+            </article>
+
+            <article class="totalsection">
+                <span id="totalstickers" class="styleInput"> </span>
+                <span id="avisoAlerta" class="styleInput"></span>
+                <button type="button" id="buttonBuy"></button>
+            </article>
+        </section>
+
+        <section id="parte3">
+            <article>
+                <div>
+                    <input type="number" name="codePass" id="num1" min="1" max="9" value="1" class="pswStyle"
+                        onkeydown="return false">
+                    <input type="number" name="codePass" id="num2" min="1" max="9" value="1" class="pswStyle"
+                        onkeydown="return false">
+                    <input type="number" name="codePass" id="num3" min="1" max="9" value="1" class="pswStyle"
+                        onkeydown="return false">
+                </div>
+                <button type="button" id="psswConfirm"> Ingresar </button>
+                <div id="msj"></div>
+            </article>
+
+        </section>
+
+    </main>
+    <script src="assets/js/scrypt.js"></script>
+</body>
+
+</html>
