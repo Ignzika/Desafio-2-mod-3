@@ -31,11 +31,10 @@ bttn.addEventListener("click", () => {
   amount = parseInt(amount);
   document.querySelector("#totalstickers").innerHTML = amount;
   if (amount > 10) {
-    alert("te pasaste wey");
     document.querySelector("#avisoAlerta").innerHTML =
       "¡llevas demasiados stickers!";
   }
-  if (amount < 10) {
+  else if (amount < 10) {
     document.querySelector("#avisoAlerta").innerHTML =
       "¡llevas " +
       amount +
@@ -44,15 +43,11 @@ bttn.addEventListener("click", () => {
       missing +
       " stickers";
   }
-  if (amount == 10) {
+  else if (amount == 10) {
     document.querySelector("#avisoAlerta").innerHTML =
       "¡llevas exactamente 10 stickers!";
   }
-  if (amount == 0) {
-    document.querySelector("#avisoAlerta").innerHTML =
-      "¡No has seleccionado ninguna cantidad de stickers!";
-  }
-  if (amount == undefined || amount == null || amount == "") {
+  else if (amount == undefined || amount == null || amount == "") {
     document.querySelector("#avisoAlerta").innerHTML =
       "これを表示させるために何をしましたか??";
   } else {
